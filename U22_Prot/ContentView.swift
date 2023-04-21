@@ -11,9 +11,14 @@ struct ContentView: View {
     @State var xSelfManeag: CGFloat = .zero
     @State var xtranslate: CGFloat = .zero
     @State var blurVal: CGFloat = 5
+    @State var location: CGFloat = .zero
+    @State var CharFlag: Bool = false
+    @State var SelfManeFlag: Bool = true
+    
     var body: some View {
         GeometryReader{ geometry in
 //            ScrollView(.horizontal, showsIndicators: false){
+            
                 VStack{
                     ZStack{
                         CharMainView().blur(radius: blurVal).animation(.default, value: blurVal)
@@ -35,13 +40,48 @@ struct ContentView: View {
                             .gesture(DragGesture()
                                 .onEnded({ value in
                                     xtranslate = value.startLocation.x - value.location.x
-                                    print(xtranslate)
-                                    if(value.startLocation.x < value.location.x && xtranslate < geometry.size.width / 2){
-                                        self.xSelfManeag = geometry.size.width
+//                                    print("xtranslate")
+                                    if(value.startLocation.x > value.location.x && self.location < geometry.size.width / 2  && self.CharFlag){
+                                        self.location = .zero
+                                        self.blurVal = 5
+                                        self.SelfManeFlag = true
+                                        self.CharFlag = false
+                                        print("yes!")
+                                    }else{
+                                        self.location = geometry.size.width * 2
                                         self.blurVal = 0
                                     }
                                 })
                             )
+                        SelfManagementBarView()
+                            .frame(width: geometry.size.width)
+                            .offset(x: geometry.size.width/2)
+                            .position(x: self.location, y: geometry.size.height/2)
+                            .animation(.default, value: self.location)
+                            .gesture(
+                                    DragGesture()
+                                        .onChanged({ value in
+//                                            print("最初:\(value.startLocation.x)")
+//                                            print("今:\(self.location)")
+                                            if(value.startLocation.x < geometry.size.width * 0.2 && self.SelfManeFlag){
+                                                self.location = value.location.x
+                                            }
+                                        })
+                                        .onEnded({ value in
+                                            if(value.translation.width > geometry.size.width * 0.5 && value.startLocation.x < geometry.size.width * 0.2 && self.SelfManeFlag){
+                                                //                                            self.location = 0
+                                                self.location = geometry.size.width * 2
+                                                self.blurVal = 0
+                                                
+                                                self.SelfManeFlag = false
+                                                self.CharFlag = true
+                                                print(self.CharFlag)
+                                                print(self.SelfManeFlag)
+                                            }else{
+                                                self.location = 0
+                                            }
+                                        })
+                                )
                     }
                 }
 //            }
