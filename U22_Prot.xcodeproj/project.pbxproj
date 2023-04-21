@@ -11,6 +11,14 @@
 		D23778FC29F248A300F49518 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23778FB29F248A300F49518 /* ContentView.swift */; };
 		D23778FE29F248A500F49518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23778FD29F248A500F49518 /* Assets.xcassets */; };
 		D237790129F248A500F49518 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D237790029F248A500F49518 /* Preview Assets.xcassets */; };
+		D237790829F2492300F49518 /* SelfManagementBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237790729F2492300F49518 /* SelfManagementBarView.swift */; };
+		D237790A29F24B0700F49518 /* SelfManagementTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237790929F24B0700F49518 /* SelfManagementTestView.swift */; };
+		D237790D29F24C5600F49518 /* CharManagementButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237790C29F24C5600F49518 /* CharManagementButtonView.swift */; };
+		D237791029F24EEC00F49518 /* CharMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237790F29F24EEC00F49518 /* CharMainView.swift */; };
+		D237791229F24F2200F49518 /* CharStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237791129F24F2200F49518 /* CharStatusView.swift */; };
+		D237791429F2507F00F49518 /* CharObjView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237791329F2507F00F49518 /* CharObjView.swift */; };
+		D237791629F250B500F49518 /* char 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D237791529F250B500F49518 /* char 2.png */; };
+		D237791829F259A300F49518 /* CharComentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237791729F259A300F49518 /* CharComentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		D23778FB29F248A300F49518 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D23778FD29F248A500F49518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D237790029F248A500F49518 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D237790729F2492300F49518 /* SelfManagementBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfManagementBarView.swift; sourceTree = "<group>"; };
+		D237790929F24B0700F49518 /* SelfManagementTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfManagementTestView.swift; sourceTree = "<group>"; };
+		D237790C29F24C5600F49518 /* CharManagementButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharManagementButtonView.swift; sourceTree = "<group>"; };
+		D237790F29F24EEC00F49518 /* CharMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharMainView.swift; sourceTree = "<group>"; };
+		D237791129F24F2200F49518 /* CharStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharStatusView.swift; sourceTree = "<group>"; };
+		D237791329F2507F00F49518 /* CharObjView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharObjView.swift; sourceTree = "<group>"; };
+		D237791529F250B500F49518 /* char 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "char 2.png"; sourceTree = "<group>"; };
+		D237791729F259A300F49518 /* CharComentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharComentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +69,10 @@
 			children = (
 				D23778F929F248A300F49518 /* U22_ProtApp.swift */,
 				D23778FB29F248A300F49518 /* ContentView.swift */,
+				D237790E29F24C5E00F49518 /* Char */,
+				D237790B29F24B7900F49518 /* SelfManagement */,
 				D23778FD29F248A500F49518 /* Assets.xcassets */,
+				D237791529F250B500F49518 /* char 2.png */,
 				D23778FF29F248A500F49518 /* Preview Content */,
 			);
 			path = U22_Prot;
@@ -65,6 +84,27 @@
 				D237790029F248A500F49518 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D237790B29F24B7900F49518 /* SelfManagement */ = {
+			isa = PBXGroup;
+			children = (
+				D237790729F2492300F49518 /* SelfManagementBarView.swift */,
+				D237790929F24B0700F49518 /* SelfManagementTestView.swift */,
+			);
+			path = SelfManagement;
+			sourceTree = "<group>";
+		};
+		D237790E29F24C5E00F49518 /* Char */ = {
+			isa = PBXGroup;
+			children = (
+				D237790F29F24EEC00F49518 /* CharMainView.swift */,
+				D237791729F259A300F49518 /* CharComentView.swift */,
+				D237791329F2507F00F49518 /* CharObjView.swift */,
+				D237790C29F24C5600F49518 /* CharManagementButtonView.swift */,
+				D237791129F24F2200F49518 /* CharStatusView.swift */,
+			);
+			path = Char;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +167,7 @@
 			files = (
 				D237790129F248A500F49518 /* Preview Assets.xcassets in Resources */,
 				D23778FE29F248A500F49518 /* Assets.xcassets in Resources */,
+				D237791629F250B500F49518 /* char 2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D237791429F2507F00F49518 /* CharObjView.swift in Sources */,
 				D23778FC29F248A300F49518 /* ContentView.swift in Sources */,
+				D237791829F259A300F49518 /* CharComentView.swift in Sources */,
 				D23778FA29F248A300F49518 /* U22_ProtApp.swift in Sources */,
+				D237790A29F24B0700F49518 /* SelfManagementTestView.swift in Sources */,
+				D237791029F24EEC00F49518 /* CharMainView.swift in Sources */,
+				D237791229F24F2200F49518 /* CharStatusView.swift in Sources */,
+				D237790D29F24C5600F49518 /* CharManagementButtonView.swift in Sources */,
+				D237790829F2492300F49518 /* SelfManagementBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +323,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +353,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,7 +9,32 @@ import SwiftUI
 
 struct CharManagementButtonView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            Spacer()
+            HStack(alignment: .top) {
+                Spacer()
+                Button {
+                    print("Push Btn1")
+                } label: {
+                    Image(systemName: "frying.pan").resizable().foregroundColor(.black).frame(width: 50, height: 50)
+                }.frame(width: 90,height: 90).background(.mint).cornerRadius(50)
+                Spacer()
+                Button {
+                    print("Push Btn1")
+                } label: {
+                    Image(systemName: "ellipsis.message").resizable().foregroundColor(.black).frame(width: 50, height: 50)
+            }.frame(width: 90,height: 90).background(.mint).cornerRadius(50)
+                Spacer()
+                Button {
+                    print("Push Btn1")
+                } label: {
+                    Image(systemName: "dumbbell").resizable().foregroundColor(.black).frame(width: 50, height: 50)
+            }.frame(width: 90,height: 90).background(.mint).cornerRadius(50)
+                Spacer()
+            }
+        }.padding(.bottom, 30)
+
     }
 }
 

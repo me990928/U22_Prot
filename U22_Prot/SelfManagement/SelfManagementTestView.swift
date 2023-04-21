@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SelfManagementMainView: View {
+struct SelfManagementTestView: View {
     var body: some View {
         Text("Coming soon...")
     }
@@ -15,6 +15,6 @@ struct SelfManagementMainView: View {
 
 struct SelfManagementMainView_Previews: PreviewProvider {
     static var previews: some View {
-        SelfManagementMainView()
+        SelfManagementTestView()
     }
 }

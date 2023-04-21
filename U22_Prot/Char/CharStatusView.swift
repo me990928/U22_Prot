@@ -9,7 +9,14 @@ import SwiftUI
 
 struct CharStatusView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack(){
+                Text("Level: 10").font(.title3)
+                Spacer()
+                Text("00:00")
+            }.padding()
+            Spacer()
+        }
     }
 }
 

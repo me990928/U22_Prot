@@ -9,7 +9,11 @@ import SwiftUI
 
 struct CharComentView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack {
+            Text("テストメッセージです。").multilineTextAlignment(.leading)
+            Spacer()
+        }.padding(50)
     }
 }
 
